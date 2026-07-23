@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUSAY TOSUN - Portfolyo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-800 border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-white tracking-wider">KUSAY TOSUN</span>
+            <div class="flex space-x-4 text-sm font-medium">
+                <a href="#hakkimda" class="text-slate-300 hover:text-indigo-400 transition">Hakkımda</a>
+                <a href="#projeler" class="text-slate-300 hover:text-indigo-400 transition">Projeler</a>
+                <a href="#iletisim" class="text-slate-300 hover:text-indigo-400 transition">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- Hero / Profil Bölümü -->
+        <section id="hakkimda" class="bg-slate-800 border border-slate-700 rounded-2xl p-8 shadow-xl flex flex-col md:flex-row items-center gap-8">
+            <div class="relative w-36 h-36 flex-shrink-0">
+                <img src="profil.jpg" alt="KUSAY TOSUN" class="w-full h-full object-cover rounded-full border-4 border-indigo-500 shadow-md">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold text-white">KUSAY TOSUN</h1>
+                <p class="text-indigo-400 font-medium mt-1">Elektrik-Elektronik Mühendisliği Öğrencisi</p>
+                <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                    Yazılım, gömülü sistemler, devre tasarımı ve modern web teknolojileri üzerine çalışmalar yürütüyorum. Teknoloji üretmeyi ve yeni projeler geliştirmeyi seviyorum.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projeler Bölümü -->
+        <section id="projeler">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fas fa-code text-indigo-400"></i> Projelerim
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Proje Kartı 1 -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-md hover:border-indigo-500 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">EMİRŞAH - Teknofest Projesi</h3>
+                    <p class="text-slate-400 text-sm mb-4">Gömülü sistemler ve donanım entegrasyonu üzerine geliştirilen takım projesi.</p>
+                    <span class="inline-block bg-indigo-900 text-indigo-300 text-xs px-2.5 py-1 rounded-md font-medium">C++ / Donanım</span>
+                </div>
+
+                <!-- Proje Kartı 2 -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-md hover:border-indigo-500 transition">
+                    <h3 class="text-lg font-bold text-white mb-2">Kişisel Portfolyo Sitesi</h3>
+                    <p class="text-slate-400 text-sm mb-4">HTML, CSS ve Tailwind kullanılarak sıfırdan tasarlanan modern web arayüzü.</p>
+                    <span class="inline-block bg-indigo-900 text-indigo-300 text-xs px-2.5 py-1 rounded-md font-medium">HTML / Tailwind</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- İletişim / Sosyal Bağlantılar -->
+        <section id="iletisim" class="bg-slate-800 border border-slate-700 rounded-2xl p-8 shadow-xl">
+            <h2 class="text-2xl font-bold text-white mb-6 text-center">İletişim & Sosyal Medya</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <a href="https://linkedin.com/in/kusaytosun" target="_blank" class="flex items-center p-3 bg-slate-700 hover:bg-indigo-600 rounded-xl transition font-medium text-sm group">
+                    <i class="fab fa-linkedin text-xl text-indigo-400 group-hover:text-white mr-3"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/kusaytosun" target="_blank" class="flex items-center p-3 bg-slate-700 hover:bg-indigo-600 rounded-xl transition font-medium text-sm group">
+                    <i class="fab fa-github text-xl text-indigo-400 group-hover:text-white mr-3"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="https://instagram.com/kusaytosun" target="_blank" class="flex items-center p-3 bg-slate-700 hover:bg-indigo-600 rounded-xl transition font-medium text-sm group">
+                    <i class="fab fa-instagram text-xl text-indigo-400 group-hover:text-white mr-3"></i>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="mailto:iletisim@kusaytosun.com" class="flex items-center p-3 bg-slate-700 hover:bg-indigo-600 rounded-xl transition font-medium text-sm group">
+                    <i class="fas fa-envelope text-xl text-indigo-400 group-hover:text-white mr-3"></i>
+                    <span>E-posta Gönder</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-slate-500 text-xs border-t border-slate-800 mt-12">
+        &copy; 2026 KUSAY TOSUN. Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
